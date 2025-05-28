@@ -1,6 +1,6 @@
 // Chat.js
-const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 import React, { useState } from 'react';
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
 export default function Chat({ settings }) {
   const [messages, setMessages] = useState([]);
