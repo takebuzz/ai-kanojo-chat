@@ -1,3 +1,5 @@
+import Settings from './components/Settings';
+import Chat from './components/Chat';
 import React from 'react';
 
 function App() {
