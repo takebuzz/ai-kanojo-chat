@@ -1,17 +1,11 @@
-import React, { useState } from 'react';
-import Chat from './components/Chat';
-import Settings from './components/Settings';
+import React from 'react';
 
-export default function App() {
-  const [settings, setSettings] = useState(null);
-
+function App() {
   return (
     <div>
-      {!settings ? (
-        <Settings onSubmit={setSettings} />
-      ) : (
-        <Chat settings={settings} />
-      )}
+      <h1>AI彼女チャットへようこそ！</h1>
     </div>
   );
 }
+
+export default App;
