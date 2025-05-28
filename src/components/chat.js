@@ -1,4 +1,5 @@
 // Chat.js
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 import React, { useState } from 'react';
 
 export default function Chat({ settings }) {
@@ -19,7 +20,7 @@ export default function Chat({ settings }) {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer YOUR_API_KEY`
+          'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`
         },
         body: JSON.stringify({
           model: 'gpt-3.5-turbo',
